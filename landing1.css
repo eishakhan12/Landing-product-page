@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(117, 46, 46);
+}
+
+header {
+    /* background-color: rgb(129, 8, 8); */
+    background-color:  rgb(71, 22, 22);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    width: 70px; 
+    height: 50px; 
+    margin-right: 10px; 
+    border-radius: 70px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero {
+    background: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #06d6a0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #118ab2;
+}
+
+.food-menu {
+    text-align: center;
+    padding: 2rem;
+}
+
+.food-menu h2{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-item {
+    background-color: #f9c74f;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.menu-item p {
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color:  rgb(71, 22, 22);
+    color: #fff;
+}
+
+
+/* Media Query for screen width between 360px and 640px */
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .food-menu h2 {
+        font-size: 32px;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+}
